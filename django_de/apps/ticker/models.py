@@ -52,6 +52,8 @@ class Entry(models.Model):
     enable_comments = models.BooleanField(default=True)
 
     class Meta:
+        verbose_name = _('entry')
+        verbose_name_plural = _('entries')
         ordering = ('-published',)
         permissions = (
             ('can_change_foreign', 'Can change foreign entry'),
