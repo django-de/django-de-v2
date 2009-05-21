@@ -34,7 +34,7 @@
 		{% endfor %}
 		</ol>
 		{% endif %}
-		
+{% if entry.comments_enabled %}		
 		<h3>Kommentar hinzufügen</h3>
 		<fieldset class="shinyform">
 	    <form method="POST" action="{% get_free_comment_url entry %}">
@@ -44,6 +44,7 @@
 	        </ol>
 	    </form>
 		</fieldset>
+{% endif %}
 
 	</div>
 </div>
