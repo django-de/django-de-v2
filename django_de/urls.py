@@ -42,11 +42,11 @@ urlpatterns = patterns('',
     (r'^robots.txt$', include('robots.urls')),
 
     # Overriding the default threadedcomment-form
-    url(r'^threadedcomments/freecomment/(?P<content_type>\d+)/(?P<object_id>\d+)/$',
-        tc_views.free_comment,
-        {'form_class': BetterFreeThreadedCommentForm},
-        name="tc_free_comment"),
-    (r'^threadedcomments/', include('threadedcomments.urls')),
+    #url(r'^threadedcomments/freecomment/(?P<content_type>\d+)/(?P<object_id>\d+)/$',
+    #    tc_views.free_comment,
+    #    {'form_class': BetterFreeThreadedCommentForm},
+    #    name="tc_free_comment"),
+    #(r'^threadedcomments/', include('threadedcomments.urls')),
 )
 
 if settings.DEBUG:

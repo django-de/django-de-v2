@@ -1,6 +1,6 @@
 import os, platform
 
-DEVELOPMENT_MODE = (platform.node() != "tichy.websushi.org")
+DEVELOPMENT_MODE = (platform.node() != "uhura.websushi.org")
 PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 DEFAULT_FROM_EMAIL = "info@django-de.org"
@@ -69,7 +69,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.csrf.middleware.CsrfMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.middleware.cache.CacheMiddleware',
+    #'django.middleware.cache.CacheMiddleware',
     'django.middleware.common.CommonMiddleware',
     'pagination.middleware.PaginationMiddleware',
 )

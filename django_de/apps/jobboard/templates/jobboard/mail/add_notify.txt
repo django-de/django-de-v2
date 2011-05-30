@@ -1,13 +1,13 @@
 Hallo {{ entry.name }},
 
-deine Stellenanzeige bei https://www.django-de.org/jobs/ wurde erfolgreich
+deine Stellenanzeige bei http://www.django-de.org/jobs/ wurde erfolgreich
 eingestellt.
 
 1. Stellenanzeige aktivieren
 
 Bitte klicke noch auf den folgenden Link, um die Anzeige zu aktivieren.
 
-https://www.django-de.org/jobs/verify/{{ entry.id }}-{{ entry.edit_key }}/
+http://www.django-de.org/jobs/verify/{{ entry.id }}-{{ entry.edit_key }}/
 
 
 2. Stellenanzeige ändern oder löschen
@@ -15,7 +15,7 @@ https://www.django-de.org/jobs/verify/{{ entry.id }}-{{ entry.edit_key }}/
 Du kannst diese Stellenanzeige auch jederzeit ändern oder löschen. Klicke dazu
 einfach auf diesen Link:
 
-https://www.django-de.org/jobs/edit/{{ entry.id }}-{{ entry.edit_key }}/
+http://www.django-de.org/jobs/edit/{{ entry.id }}-{{ entry.edit_key }}/
 
 Hebe dir diese E-Mail gut auf!
 
